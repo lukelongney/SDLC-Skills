@@ -1,0 +1,657 @@
+<ac:structured-macro ac:name="info">
+  <ac:rich-text-body>
+    <p><strong>SDLC Skills Framework</strong> | Version 1.0 | S1-S9 | 6 Interactive - 3 Agentic</p>
+  </ac:rich-text-body>
+</ac:structured-macro>
+
+<p>This framework provides AI-assisted skills for the concept and design phase of enterprise software delivery.</p>
+
+<h2>Skill Chain Overview</h2>
+
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">View Full Skill Chain</ac:parameter>
+  <ac:rich-text-body>
+    <table>
+      <tbody>
+        <tr>
+          <th>Order</th>
+          <th>Skill</th>
+          <th>Type</th>
+          <th>Purpose</th>
+        </tr>
+        <tr>
+          <td>S1</td>
+          <td>Concept Brief</td>
+          <td><ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Green</ac:parameter><ac:parameter ac:name="title">Interactive</ac:parameter></ac:structured-macro></td>
+          <td>Problem definition and scope</td>
+        </tr>
+        <tr>
+          <td>S2</td>
+          <td>Feasibility Assessment</td>
+          <td><ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Green</ac:parameter><ac:parameter ac:name="title">Interactive</ac:parameter></ac:structured-macro></td>
+          <td>Viability analysis</td>
+        </tr>
+        <tr>
+          <td>S3</td>
+          <td>High Level Requirements</td>
+          <td><ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Green</ac:parameter><ac:parameter ac:name="title">Interactive</ac:parameter></ac:structured-macro></td>
+          <td>Requirements elicitation (v1-v2-v3)</td>
+        </tr>
+        <tr>
+          <td>S4</td>
+          <td>Solution Architecture</td>
+          <td><ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Green</ac:parameter><ac:parameter ac:name="title">Interactive</ac:parameter></ac:structured-macro></td>
+          <td>Technical design</td>
+        </tr>
+        <tr>
+          <td>S5</td>
+          <td>Threat Modelling</td>
+          <td><ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Green</ac:parameter><ac:parameter ac:name="title">Interactive</ac:parameter></ac:structured-macro></td>
+          <td>Security analysis (STRIDE)</td>
+        </tr>
+        <tr>
+          <td>S6</td>
+          <td>Design Validation</td>
+          <td><ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Yellow</ac:parameter><ac:parameter ac:name="title">Agentic</ac:parameter></ac:structured-macro></td>
+          <td>Cross-artifact validation</td>
+        </tr>
+        <tr>
+          <td>S7</td>
+          <td>Jira Project Scaffolding</td>
+          <td><ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Green</ac:parameter><ac:parameter ac:name="title">Interactive</ac:parameter></ac:structured-macro></td>
+          <td>Epic/story creation</td>
+        </tr>
+        <tr>
+          <td>S8</td>
+          <td>Security Assessment</td>
+          <td><ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Yellow</ac:parameter><ac:parameter ac:name="title">Agentic</ac:parameter></ac:structured-macro></td>
+          <td>Independent security review</td>
+        </tr>
+        <tr>
+          <td>S9</td>
+          <td>Operational Readiness</td>
+          <td><ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Yellow</ac:parameter><ac:parameter ac:name="title">Agentic</ac:parameter></ac:structured-macro></td>
+          <td>Handoff to delivery</td>
+        </tr>
+      </tbody>
+    </table>
+  </ac:rich-text-body>
+</ac:structured-macro>
+
+<hr />
+
+<h2>S1 — Concept Brief</h2>
+
+<ac:structured-macro ac:name="panel">
+  <ac:parameter ac:name="borderStyle">solid</ac:parameter>
+  <ac:parameter ac:name="borderColor">#ccc</ac:parameter>
+  <ac:parameter ac:name="title">Interactive Skill</ac:parameter>
+  <ac:rich-text-body>
+    <p><strong>Position:</strong> First skill — initiates the chain</p>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Purpose</ac:parameter>
+      <ac:rich-text-body>
+        <p>Collaborative problem definition and scope identification. Helps stakeholders articulate the business problem, identify affected areas, and establish project boundaries.</p>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Inputs</ac:parameter>
+      <ac:rich-text-body>
+        <ul>
+          <li>User's initial idea or problem statement</li>
+          <li>Business context from conversation</li>
+          <li>Optional: Confluence/Jira discovery via MCP</li>
+        </ul>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Outputs</ac:parameter>
+      <ac:rich-text-body>
+        <ul>
+          <li>Primary: <code>docs/concept-briefs/YYYY-MM-DD-&lt;topic&gt;-concept-brief.md</code></li>
+          <li>YAML frontmatter as context summary for downstream skills</li>
+        </ul>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Key Sections</ac:parameter>
+      <ac:rich-text-body>
+        <table>
+          <tbody>
+            <tr><th>Section</th><th>Description</th></tr>
+            <tr><td>Problem Statement</td><td>What problem are we solving?</td></tr>
+            <tr><td>Affected Business Areas</td><td>Who is impacted?</td></tr>
+            <tr><td>Proposed Scope</td><td>What's in and out?</td></tr>
+            <tr><td>Success Criteria</td><td>How do we know we succeeded?</td></tr>
+            <tr><td>Initial Risks</td><td>What could go wrong?</td></tr>
+          </tbody>
+        </table>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+  </ac:rich-text-body>
+</ac:structured-macro>
+
+<hr />
+
+<h2>S2 — Feasibility Assessment</h2>
+
+<ac:structured-macro ac:name="panel">
+  <ac:parameter ac:name="borderStyle">solid</ac:parameter>
+  <ac:parameter ac:name="borderColor">#ccc</ac:parameter>
+  <ac:parameter ac:name="title">Interactive Skill</ac:parameter>
+  <ac:rich-text-body>
+    <p><strong>Position:</strong> Second skill — receives S1</p>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Purpose</ac:parameter>
+      <ac:rich-text-body>
+        <p>Structured viability analysis covering technical, operational, economic, and scheduling dimensions. Produces go/no-go recommendation with ROM estimates.</p>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Assessment Dimensions</ac:parameter>
+      <ac:rich-text-body>
+        <table>
+          <tbody>
+            <tr><th>Dimension</th><th>Focus</th></tr>
+            <tr><td>Technical</td><td>Can we build it?</td></tr>
+            <tr><td>Operational</td><td>Can we run it?</td></tr>
+            <tr><td>Economic</td><td>Is it worth it?</td></tr>
+            <tr><td>Schedule</td><td>Can we deliver in time?</td></tr>
+          </tbody>
+        </table>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Outputs</ac:parameter>
+      <ac:rich-text-body>
+        <ul>
+          <li>Primary: <code>docs/feasibility/YYYY-MM-DD-&lt;topic&gt;-feasibility.md</code></li>
+          <li>ROM estimates and risk assessment</li>
+          <li>Go/Conditional Go/No-Go recommendation</li>
+        </ul>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+  </ac:rich-text-body>
+</ac:structured-macro>
+
+<hr />
+
+<h2>S3 — High Level Requirements</h2>
+
+<ac:structured-macro ac:name="panel">
+  <ac:parameter ac:name="borderStyle">solid</ac:parameter>
+  <ac:parameter ac:name="borderColor">#ccc</ac:parameter>
+  <ac:parameter ac:name="title">Interactive Skill</ac:parameter>
+  <ac:rich-text-body>
+    <p><strong>Position:</strong> Third skill — iterates through v1, v2, v3</p>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Purpose</ac:parameter>
+      <ac:rich-text-body>
+        <p>Structured requirements elicitation producing capability-grouped requirements with MoSCoW prioritisation. Iterates based on architecture (v2) and security (v3) feedback.</p>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Version Evolution</ac:parameter>
+      <ac:rich-text-body>
+        <table>
+          <tbody>
+            <tr><th>Version</th><th>Trigger</th><th>Additions</th></tr>
+            <tr><td>v1</td><td>After S2 approval</td><td>Initial requirements</td></tr>
+            <tr><td>v2</td><td>After S4 architecture</td><td>Technical constraints, refined NFRs</td></tr>
+            <tr><td>v3</td><td>After S5 threat model</td><td>Security requirements</td></tr>
+          </tbody>
+        </table>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Outputs</ac:parameter>
+      <ac:rich-text-body>
+        <ul>
+          <li>Primary: <code>docs/requirements/YYYY-MM-DD-&lt;topic&gt;-requirements.md</code></li>
+          <li>Capability groups with functional and non-functional requirements</li>
+          <li>MoSCoW prioritisation and complexity ratings</li>
+        </ul>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+  </ac:rich-text-body>
+</ac:structured-macro>
+
+<hr />
+
+<h2>S4 — Solution Architecture</h2>
+
+<ac:structured-macro ac:name="panel">
+  <ac:parameter ac:name="borderStyle">solid</ac:parameter>
+  <ac:parameter ac:name="borderColor">#ccc</ac:parameter>
+  <ac:parameter ac:name="title">Interactive Skill</ac:parameter>
+  <ac:rich-text-body>
+    <p><strong>Position:</strong> Fourth skill — most judgment-heavy</p>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Purpose</ac:parameter>
+      <ac:rich-text-body>
+        <p>Deep collaborative solution design. Extended back-and-forth with architect expected. Produces architecture with ADRs and feeds back to S3 for v2.</p>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Architecture Sections</ac:parameter>
+      <ac:rich-text-body>
+        <table>
+          <tbody>
+            <tr><th>Section</th><th>Content</th></tr>
+            <tr><td>System Context</td><td>C4 context diagram</td></tr>
+            <tr><td>Component Architecture</td><td>Logical components</td></tr>
+            <tr><td>Data Architecture</td><td>Data model and flows</td></tr>
+            <tr><td>Integration Architecture</td><td>APIs and messaging</td></tr>
+            <tr><td>Infrastructure</td><td>Compute, networking, storage</td></tr>
+            <tr><td>Security Architecture</td><td>Identity, encryption, network security</td></tr>
+            <tr><td>ADRs</td><td>Architecture Decision Records</td></tr>
+          </tbody>
+        </table>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Outputs</ac:parameter>
+      <ac:rich-text-body>
+        <ul>
+          <li>Primary: <code>docs/architecture/YYYY-MM-DD-&lt;topic&gt;-architecture.md</code></li>
+          <li>Secondary: <code>docs/traceability/YYYY-MM-DD-&lt;topic&gt;-traceability.md</code></li>
+          <li>ADRs embedded in document</li>
+          <li>Feedback for S3 v2</li>
+        </ul>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+  </ac:rich-text-body>
+</ac:structured-macro>
+
+<hr />
+
+<h2>S5 — Threat Modelling</h2>
+
+<ac:structured-macro ac:name="panel">
+  <ac:parameter ac:name="borderStyle">solid</ac:parameter>
+  <ac:parameter ac:name="borderColor">#ccc</ac:parameter>
+  <ac:parameter ac:name="title">Interactive Skill</ac:parameter>
+  <ac:rich-text-body>
+    <p><strong>Position:</strong> Fifth skill — security-focused</p>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Purpose</ac:parameter>
+      <ac:rich-text-body>
+        <p>Collaborative threat modelling using STRIDE methodology and OWASP ASVS control mapping. Produces security requirements for S3 v3.</p>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">STRIDE Categories</ac:parameter>
+      <ac:rich-text-body>
+        <table>
+          <tbody>
+            <tr><th>Category</th><th>Threat Type</th></tr>
+            <tr><td>S</td><td>Spoofing — Can attacker impersonate?</td></tr>
+            <tr><td>T</td><td>Tampering — Can attacker modify data?</td></tr>
+            <tr><td>R</td><td>Repudiation — Can attacker deny actions?</td></tr>
+            <tr><td>I</td><td>Information Disclosure — Can attacker access data?</td></tr>
+            <tr><td>D</td><td>Denial of Service — Can attacker disrupt?</td></tr>
+            <tr><td>E</td><td>Elevation of Privilege — Can attacker gain access?</td></tr>
+          </tbody>
+        </table>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Outputs</ac:parameter>
+      <ac:rich-text-body>
+        <ul>
+          <li>Primary: <code>docs/threat-models/YYYY-MM-DD-&lt;topic&gt;-threat-model.md</code></li>
+          <li>STRIDE analysis per component</li>
+          <li>OWASP ASVS control mapping</li>
+          <li>Security requirements addendum for S3 v3</li>
+        </ul>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+  </ac:rich-text-body>
+</ac:structured-macro>
+
+<hr />
+
+<h2>S6 — Design Validation</h2>
+
+<ac:structured-macro ac:name="panel">
+  <ac:parameter ac:name="borderStyle">solid</ac:parameter>
+  <ac:parameter ac:name="borderColor">#ff9900</ac:parameter>
+  <ac:parameter ac:name="title">Agentic Skill</ac:parameter>
+  <ac:rich-text-body>
+    <p><strong>Position:</strong> Sixth skill — autonomous gate before Jira</p>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Purpose</ac:parameter>
+      <ac:rich-text-body>
+        <p>Autonomous cross-validation of all design artifacts (S1-S5). Checks traceability, completeness, consistency, and pattern compliance. Must pass before Jira scaffolding.</p>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Validation Categories</ac:parameter>
+      <ac:rich-text-body>
+        <table>
+          <tbody>
+            <tr><th>Category</th><th>Checks</th></tr>
+            <tr><td>Traceability</td><td>Scope → Requirements → Architecture → Threats</td></tr>
+            <tr><td>Completeness</td><td>All required sections present</td></tr>
+            <tr><td>Consistency</td><td>No contradictions between artifacts</td></tr>
+            <tr><td>Pattern Compliance</td><td>Technologies against approved patterns</td></tr>
+          </tbody>
+        </table>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Verdicts</ac:parameter>
+      <ac:rich-text-body>
+        <table>
+          <tbody>
+            <tr><th>Verdict</th><th>Meaning</th><th>Next Step</th></tr>
+            <tr><td><ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Green</ac:parameter><ac:parameter ac:name="title">Ready</ac:parameter></ac:structured-macro></td><td>All checks pass</td><td>Proceed to S7</td></tr>
+            <tr><td><ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Yellow</ac:parameter><ac:parameter ac:name="title">Ready with Conditions</ac:parameter></ac:structured-macro></td><td>Warnings only</td><td>Proceed with noted conditions</td></tr>
+            <tr><td><ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Red</ac:parameter><ac:parameter ac:name="title">Not Ready</ac:parameter></ac:structured-macro></td><td>Critical issues</td><td>Resolve before continuing</td></tr>
+          </tbody>
+        </table>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Output</ac:parameter>
+      <ac:rich-text-body>
+        <ul>
+          <li>Primary: <code>docs/validation/YYYY-MM-DD-&lt;topic&gt;-design-validation.md</code></li>
+        </ul>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+  </ac:rich-text-body>
+</ac:structured-macro>
+
+<hr />
+
+<h2>S7 — Jira Project Scaffolding</h2>
+
+<ac:structured-macro ac:name="panel">
+  <ac:parameter ac:name="borderStyle">solid</ac:parameter>
+  <ac:parameter ac:name="borderColor">#ccc</ac:parameter>
+  <ac:parameter ac:name="title">Interactive Skill</ac:parameter>
+  <ac:rich-text-body>
+    <p><strong>Position:</strong> Seventh skill — translates design to work items</p>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Purpose</ac:parameter>
+      <ac:rich-text-body>
+        <p>Translates validated design artifacts into Jira epics and stories. Creates technical enablers, security stories, and user stories with acceptance criteria.</p>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Story Types</ac:parameter>
+      <ac:rich-text-body>
+        <table>
+          <tbody>
+            <tr><th>Type</th><th>Source</th><th>Example</th></tr>
+            <tr><td>User Stories</td><td>S3 Requirements</td><td>"As a user, I can..."</td></tr>
+            <tr><td>Technical Enablers</td><td>S4 Architecture</td><td>Infrastructure, frameworks</td></tr>
+            <tr><td>Security Stories</td><td>S5 Threat Model</td><td>Control implementations</td></tr>
+          </tbody>
+        </table>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Outputs</ac:parameter>
+      <ac:rich-text-body>
+        <ul>
+          <li>Jira epics aligned to capability groups</li>
+          <li>Stories with acceptance criteria</li>
+          <li>Technical enabler stories from ADRs</li>
+          <li>Security stories from threat mitigations</li>
+          <li>Local scaffold: <code>docs/jira/YYYY-MM-DD-&lt;topic&gt;-scaffolding.md</code></li>
+        </ul>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+  </ac:rich-text-body>
+</ac:structured-macro>
+
+<hr />
+
+<h2>S8 — Security Assessment</h2>
+
+<ac:structured-macro ac:name="panel">
+  <ac:parameter ac:name="borderStyle">solid</ac:parameter>
+  <ac:parameter ac:name="borderColor">#ff9900</ac:parameter>
+  <ac:parameter ac:name="title">Agentic Skill</ac:parameter>
+  <ac:rich-text-body>
+    <p><strong>Position:</strong> Eighth skill — independent verification of design artifacts</p>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Purpose</ac:parameter>
+      <ac:rich-text-body>
+        <p>Independent security assessment of design artifacts (S4, S5, S7) against industry frameworks. Framework tiering by project classification with user override. Spot checks high-priority threats have Jira stories. Produces verdict and optional Jira tickets for gaps.</p>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Framework Tiering</ac:parameter>
+      <ac:rich-text-body>
+        <table>
+          <tbody>
+            <tr><th>Classification</th><th>Default Frameworks</th></tr>
+            <tr><td>Standard</td><td>OWASP Top 10 2025, ASVS Level 1</td></tr>
+            <tr><td>Elevated</td><td>Above + ASVS Level 2 + SOC 2</td></tr>
+            <tr><td>Critical</td><td>Above + ASVS Level 3 + ISO 27001 + MITRE ATT&amp;CK</td></tr>
+          </tbody>
+        </table>
+        <p><em>User can add or remove frameworks before assessment runs.</em></p>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">What S8 Checks</ac:parameter>
+      <ac:rich-text-body>
+        <table>
+          <tbody>
+            <tr><th>Framework</th><th>Assessment Focus</th></tr>
+            <tr><td>OWASP Top 10</td><td>Each category addressed in S4 security architecture</td></tr>
+            <tr><td>OWASP ASVS</td><td>S5 controls cover required sections for level</td></tr>
+            <tr><td>SOC 2</td><td>Trust Service Criteria in design</td></tr>
+            <tr><td>ISO 27001</td><td>Relevant Annex A controls designed</td></tr>
+            <tr><td>MITRE ATT&amp;CK</td><td>Detection/logging for relevant techniques</td></tr>
+          </tbody>
+        </table>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Verdicts</ac:parameter>
+      <ac:rich-text-body>
+        <table>
+          <tbody>
+            <tr><th>Verdict</th><th>Criteria</th><th>Action</th></tr>
+            <tr><td><ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Green</ac:parameter><ac:parameter ac:name="title">Approved</ac:parameter></ac:structured-macro></td><td>No Critical or High findings</td><td>Proceed to S9</td></tr>
+            <tr><td><ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Yellow</ac:parameter><ac:parameter ac:name="title">Approved with Conditions</ac:parameter></ac:structured-macro></td><td>High findings documented</td><td>Proceed with conditions</td></tr>
+            <tr><td><ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Red</ac:parameter><ac:parameter ac:name="title">Not Approved</ac:parameter></ac:structured-macro></td><td>Critical findings present</td><td>Resolve before continuing</td></tr>
+          </tbody>
+        </table>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Jira Integration</ac:parameter>
+      <ac:rich-text-body>
+        <ul>
+          <li>Spot checks 3-5 high-priority threats from S5 have Jira stories</li>
+          <li>Offers to create defect tickets for gaps (user confirms)</li>
+          <li>Uses same Jira integration as S7</li>
+        </ul>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Output</ac:parameter>
+      <ac:rich-text-body>
+        <ul>
+          <li>Primary: <code>docs/security/YYYY-MM-DD-&lt;topic&gt;-security-assessment.md</code></li>
+          <li>Optional: Jira defect tickets for gaps</li>
+        </ul>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+  </ac:rich-text-body>
+</ac:structured-macro>
+
+<hr />
+
+<h2>S9 — Operational Readiness &amp; Handoff</h2>
+
+<ac:structured-macro ac:name="panel">
+  <ac:parameter ac:name="borderStyle">solid</ac:parameter>
+  <ac:parameter ac:name="borderColor">#ff9900</ac:parameter>
+  <ac:parameter ac:name="title">Agentic Skill</ac:parameter>
+  <ac:rich-text-body>
+    <p><strong>Position:</strong> Ninth and final skill — consolidates design for delivery</p>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Purpose</ac:parameter>
+      <ac:rich-text-body>
+        <p>Consolidates the complete design phase into a handoff package for delivery. Assesses change impact (technical + organizational) and operational readiness. Produces audience-specific sections. Informs delivery — not a blocking gate.</p>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">What S9 Consolidates</ac:parameter>
+      <ac:rich-text-body>
+        <table>
+          <tbody>
+            <tr><th>Source</th><th>What S9 Extracts</th></tr>
+            <tr><td>S1</td><td>Problem statement, scope, business areas</td></tr>
+            <tr><td>S2</td><td>ROM estimate, key risks, conditions</td></tr>
+            <tr><td>S3</td><td>Capability summary, requirement counts</td></tr>
+            <tr><td>S4</td><td>Architecture style, components, ADRs</td></tr>
+            <tr><td>S5</td><td>Threat count, security controls</td></tr>
+            <tr><td>S6</td><td>Validation verdict, conditions</td></tr>
+            <tr><td>S7</td><td>Epic/story counts</td></tr>
+            <tr><td>S8</td><td>Security verdict, findings</td></tr>
+          </tbody>
+        </table>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Change Impact Assessment</ac:parameter>
+      <ac:rich-text-body>
+        <table>
+          <tbody>
+            <tr><th>Area</th><th>Assessment</th></tr>
+            <tr><td>Technical</td><td>Systems affected, integrations, infrastructure</td></tr>
+            <tr><td>Organizational</td><td>Teams affected, training, process changes</td></tr>
+            <tr><td>Rating</td><td>Low / Medium / High</td></tr>
+          </tbody>
+        </table>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Operational Readiness Indicators</ac:parameter>
+      <ac:rich-text-body>
+        <table>
+          <tbody>
+            <tr><th>Area</th><th>Status Options</th></tr>
+            <tr><td>Monitoring</td><td><ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Green</ac:parameter><ac:parameter ac:name="title">Complete</ac:parameter></ac:structured-macro> / <ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Yellow</ac:parameter><ac:parameter ac:name="title">Partial</ac:parameter></ac:structured-macro> / <ac:structured-macro ac:name="status"><ac:parameter ac:name="colour">Red</ac:parameter><ac:parameter ac:name="title">Gap</ac:parameter></ac:structured-macro></td></tr>
+            <tr><td>Alerting</td><td>Thresholds defined?</td></tr>
+            <tr><td>Logging</td><td>Approach designed?</td></tr>
+            <tr><td>Incident Response</td><td>Runbook approach?</td></tr>
+            <tr><td>Rollback</td><td>Procedure designed?</td></tr>
+            <tr><td>Support Model</td><td>L1/L2/L3 defined?</td></tr>
+            <tr><td>Escalation Paths</td><td>Matrix identified?</td></tr>
+            <tr><td>SLA Implications</td><td>Targets defined?</td></tr>
+          </tbody>
+        </table>
+        <p><em>Not a gate — indicators inform delivery planning</em></p>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Audience-Specific Sections</ac:parameter>
+      <ac:rich-text-body>
+        <table>
+          <tbody>
+            <tr><th>Audience</th><th>Focus</th></tr>
+            <tr><td>Executive</td><td>Problem, viability, impact, risks, ROM</td></tr>
+            <tr><td>Project Manager</td><td>Scope, epics/stories, dependencies</td></tr>
+            <tr><td>Technical Lead</td><td>Architecture, ADRs, integrations</td></tr>
+            <tr><td>Ops/SRE</td><td>Infrastructure, monitoring, deployment</td></tr>
+            <tr><td>Support</td><td>Business context, support model, escalations</td></tr>
+          </tbody>
+        </table>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+
+    <ac:structured-macro ac:name="expand">
+      <ac:parameter ac:name="title">Outputs</ac:parameter>
+      <ac:rich-text-body>
+        <ul>
+          <li>Primary: <code>docs/handoff/YYYY-MM-DD-&lt;topic&gt;-handoff.md</code></li>
+          <li>Confluence-ready: <code>docs/handoff/YYYY-MM-DD-&lt;topic&gt;-handoff-confluence.md</code></li>
+        </ul>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+  </ac:rich-text-body>
+</ac:structured-macro>
+
+<hr />
+
+<h2>Context Flow</h2>
+
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">How Skills Share Context</ac:parameter>
+  <ac:rich-text-body>
+    <p>Each skill produces YAML frontmatter as a compressed context summary:</p>
+    <ac:structured-macro ac:name="code">
+      <ac:plain-text-body><![CDATA[---
+type: concept-brief
+status: approved
+problem_summary: "Brief problem statement"
+scope_items: ["item1", "item2"]
+risk_count: 3
+---]]></ac:plain-text-body>
+    </ac:structured-macro>
+    <p>Downstream skills read frontmatter to understand upstream decisions without reading full documents.</p>
+  </ac:rich-text-body>
+</ac:structured-macro>
+
+<hr />
+
+<h2>Output Locations</h2>
+
+<table>
+  <tbody>
+    <tr><th>Artifact Type</th><th>Location</th></tr>
+    <tr><td>Concept Briefs</td><td><code>docs/concept-briefs/</code></td></tr>
+    <tr><td>Feasibility</td><td><code>docs/feasibility/</code></td></tr>
+    <tr><td>Requirements</td><td><code>docs/requirements/</code></td></tr>
+    <tr><td>Architecture</td><td><code>docs/architecture/</code></td></tr>
+    <tr><td>Traceability</td><td><code>docs/traceability/</code></td></tr>
+    <tr><td>Threat Models</td><td><code>docs/threat-models/</code></td></tr>
+    <tr><td>Validation</td><td><code>docs/validation/</code></td></tr>
+    <tr><td>Jira Scaffolding</td><td><code>docs/jira/</code></td></tr>
+    <tr><td>Security Assessment</td><td><code>docs/security/</code></td></tr>
+    <tr><td>Handoff</td><td><code>docs/handoff/</code></td></tr>
+  </tbody>
+</table>
