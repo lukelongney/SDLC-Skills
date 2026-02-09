@@ -254,28 +254,112 @@ Translates validated design artifacts into Jira epics and stories. Creates techn
 
 {status:colour=Yellow|title=Agentic}
 
-*Position:* Eighth skill — independent verification
+*Position:* Eighth skill — independent verification of design artifacts
 
 {expand:title=Purpose}
-Independent security assessment against OWASP ASVS and compliance frameworks. Autonomous verification separate from S5 collaborative threat modelling.
+Independent security assessment of design artifacts (S4, S5, S7) against industry frameworks. Framework tiering by project classification with user override. Spot checks high-priority threats have Jira stories. Produces verdict and optional Jira tickets for gaps.
 {expand}
 
-{expand:title=Frameworks}
-* OWASP ASVS 5.0
-* MITRE ATT&CK (detection coverage)
-* Compliance: SOC 2, ISO 27001
+{expand:title=Framework Tiering}
+| Classification | Default Frameworks |
+|----------------|-------------------|
+| Standard | OWASP Top 10 2025, ASVS Level 1 |
+| Elevated | Above + ASVS Level 2 + SOC 2 |
+| Critical | Above + ASVS Level 3 + ISO 27001 + MITRE ATT&CK |
+
+User can add or remove frameworks before assessment runs.
+{expand}
+
+{expand:title=What S8 Checks}
+| Framework | Assessment Focus |
+|-----------|-----------------|
+| OWASP Top 10 | Each category addressed in S4 security architecture |
+| OWASP ASVS | S5 controls cover required sections for level |
+| SOC 2 | Trust Service Criteria in design |
+| ISO 27001 | Relevant Annex A controls designed |
+| MITRE ATT&CK | Detection/logging for relevant techniques |
+{expand}
+
+{expand:title=Verdicts}
+| Verdict | Criteria | Action |
+|---------|----------|--------|
+| {status:colour=Green|title=Approved} | No Critical or High findings | Proceed to S9 |
+| {status:colour=Yellow|title=Approved with Conditions} | High findings documented | Proceed with conditions |
+| {status:colour=Red|title=Not Approved} | Critical findings present | Resolve before continuing |
+{expand}
+
+{expand:title=Jira Integration}
+* Spot checks 3-5 high-priority threats from S5 have Jira stories
+* Offers to create defect tickets for gaps (user confirms)
+* Uses same Jira integration as S7
+{expand}
+
+{expand:title=Output}
+* Primary: `docs/security/YYYY-MM-DD-<topic>-security-assessment.md`
+* Optional: Jira defect tickets for gaps
 {expand}
 
 ---
 
-## S9 — Operational Readiness
+## S9 — Operational Readiness & Handoff
 
-{status:colour=Green|title=Interactive}
+{status:colour=Yellow|title=Agentic}
 
-*Position:* Ninth skill — go-live preparation
+*Position:* Ninth and final skill — consolidates design for delivery
 
 {expand:title=Purpose}
-Collaborative operational readiness assessment. Validates monitoring, alerting, runbooks, and support processes before go-live.
+Consolidates the complete design phase into a handoff package for delivery. Assesses change impact (technical + organizational) and operational readiness. Produces audience-specific sections. Informs delivery — not a blocking gate.
+{expand}
+
+{expand:title=What S9 Consolidates}
+| Source | What S9 Extracts |
+|--------|------------------|
+| S1 | Problem statement, scope, business areas |
+| S2 | ROM estimate, key risks, conditions |
+| S3 | Capability summary, requirement counts |
+| S4 | Architecture style, components, ADRs |
+| S5 | Threat count, security controls |
+| S6 | Validation verdict, conditions |
+| S7 | Epic/story counts |
+| S8 | Security verdict, findings |
+{expand}
+
+{expand:title=Change Impact Assessment}
+| Area | Assessment |
+|------|------------|
+| Technical | Systems affected, integrations, infrastructure |
+| Organizational | Teams affected, training, process changes |
+| Rating | Low / Medium / High |
+{expand}
+
+{expand:title=Operational Readiness Indicators}
+| Area | Status Options |
+|------|----------------|
+| Monitoring | {status:colour=Green|title=Complete} / {status:colour=Yellow|title=Partial} / {status:colour=Red|title=Gap} |
+| Alerting | Thresholds defined? |
+| Logging | Approach designed? |
+| Incident Response | Runbook approach? |
+| Rollback | Procedure designed? |
+| Support Model | L1/L2/L3 defined? |
+| Escalation Paths | Matrix identified? |
+| SLA Implications | Targets defined? |
+
+*Not a gate — indicators inform delivery planning*
+{expand}
+
+{expand:title=Audience-Specific Sections}
+| Audience | Focus |
+|----------|-------|
+| Executive | Problem, viability, impact, risks, ROM |
+| Project Manager | Scope, epics/stories, dependencies |
+| Technical Lead | Architecture, ADRs, integrations |
+| Ops/SRE | Infrastructure, monitoring, deployment |
+| Support | Business context, support model, escalations |
+{expand}
+
+{expand:title=Outputs}
+* Primary: `docs/handoff/YYYY-MM-DD-<topic>-handoff.md`
+* Confluence-ready: `docs/handoff/YYYY-MM-DD-<topic>-handoff-confluence.md`
 {expand}
 
 ---
@@ -311,6 +395,9 @@ Downstream skills read frontmatter to understand upstream decisions without read
 | Traceability | `docs/traceability/` |
 | Threat Models | `docs/threat-models/` |
 | Validation | `docs/validation/` |
+| Jira Scaffolding | `docs/jira/` |
+| Security Assessment | `docs/security/` |
+| Handoff | `docs/handoff/` |
 
 ---
 
